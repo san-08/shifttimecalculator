@@ -20,13 +20,13 @@ function calculate() {
 function calculateTimeInterval(stime, etime, count) {
   const start = new Date(stime);
   const end = new Date(etime);
-  alert(start);
+  // alert(start);
   count = parseInt(count);
 
   const timeSpan = end - start;
   const interval = timeSpan / count;
 
-  alert(interval);
+  // alert(interval);
 
   const intervals = [];
   let currentTime = new Date(start);
@@ -35,7 +35,7 @@ function calculateTimeInterval(stime, etime, count) {
     intervals.push(new Date(currentTime));
     currentTime = new Date(currentTime.getTime() + interval);
   }
-  alert(intervals);
+  // alert(intervals);
   return intervals;
 }
 
