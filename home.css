@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background: radial-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(background.jpg); */
+    background-position: center;
+    
+}
+
+.divlogo{
+    width: 100%;
+    min-height: 70px;
+    text-align: center;
+    background-color: black;
+    line-height: 70px;
+    
+}
+.divlogo h2{
+    color: aliceblue;
+}
+
+.maindiv{
+    width: 100%;
+    background-color: rgb(57, 231, 103);
+    min-height: 500px;
+    display: flex;
+
+}
+
+.maindiv > div{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 1cm;
+}
+.child1{
+    width: 40%;
+    background-color: black;
+    min-height: 450px;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* gap: 10px; */
+    align-items: center;
+    
+}
+.child1 label{
+    text-align: center;
+    font-size: 16px;   
+}
+.child1 input{
+    width: 80%;
+}
+.child1 button{
+    grid-column: 1 / span 2;
+    justify-self: center;
+    color: brown;
+}
+
+
+.child2{
+    width: 40%;
+    background-color: black;
+    min-height: 450px;
+    color: aliceblue;
+}
+
+.divfooter{
+    width: 100%;
+    background-color: black;
+    min-height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.divfooter p{
+    color: aliceblue;
+}
