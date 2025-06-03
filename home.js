@@ -7,7 +7,7 @@ function calculate() {
 
   const output = result.map((time, i, arr) =>{
     if(i < arr.length - 1){
-        return `${formatTime(arr[i])} to ${formatTime(arr[i+1])} [Emplyoee ${i+1}]`;
+        return `${formatTime(arr[i])} to ${formatTime(arr[i+1])} --> [Emplyoee ${i+1}]`;
 
     }
   }).filter(Boolean).join("<br>");
