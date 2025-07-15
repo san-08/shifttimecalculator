@@ -7,11 +7,22 @@
     
 }
 
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+}
 .divlogo{
     width: 100%;
     min-height: 70px;
     text-align: center;
-    background-color: black;
+    background-color: rgb(50, 50, 37);
     line-height: 70px;
     
 }
@@ -19,22 +30,27 @@
     color: aliceblue;
 }
 
-.maindiv{
+.maindiv {
+    flex: 1;
     width: 100%;
-    background-color: rgb(57, 231, 103);
-    min-height: 500px;
+    background-color: rgb(160, 209, 173);
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    min-height: 0; /* Let flexbox control height */
 }
 
 .maindiv > div{
     margin: 10px;
     padding: 20px;
     border-radius: 1cm;
+    min-width: 300px;
+    min-height: 450px;
+    box-sizing: border-box;
 }
 .child1{
     width: 40%;
-    background-color: black;
+    background-color: rgb(48, 81, 86);
     min-height: 450px;
     color: aliceblue;
     display: grid;
@@ -56,11 +72,10 @@
     color: brown;
 }
 
-
 .child2{
     width: 40%;
-    background-color: black;
-    min-height: 450px;
+    background-color:rgb(48, 81, 86) ;
+    /* min-height: 450px; */
     color: aliceblue;
 }
 
