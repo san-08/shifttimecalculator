@@ -89,3 +89,8 @@ body {
 .divfooter p{
     color: aliceblue;
 }
+#developed-info {
+    font-size: 12px;
+    color: gray;
+    margin-top: 0px;
+}
